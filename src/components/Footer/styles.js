@@ -10,35 +10,33 @@ const { height, width } = Dimensions.get('window');
 const Android = Platform.OS === 'android';
 
 export const styles = StyleSheet.create({
-  page: {
-    flex: 1,
-    padding: 30,
-    backgroundColor: '#efefef'
-  },
-  headContain: {
-    flexDirection: 'row',
-    paddingTop: 70,
-    alignItems: 'center',
-    justifyContent: 'space-between',
-  },
-  headerText: {
-    fontSize: 25,
-  },
-  icons: {
+  container: {
     backgroundColor: colors.accent,
-    elevation: 0
+    borderTopStartRadius: 120,
+    borderTopEndRadius: 120,
   },
-  section2: {
+  footer: {
     flexDirection: 'row',
-    height: 50,
-    // backgroundColor: 'orange'
+    justifyContent: 'space-evenly',
   },
-  button: {
+  icon: {
+    backgroundColor: colors.accent,
+  },
+  homeButtonContainer: {
+    width: 70,
+    height: 70,
+    position: 'absolute',
+    top: -30,
     borderRadius: 100,
-    margin: 5
+    backgroundColor: '#efefef',
+    justifyContent: 'center',
+    alignItems: 'center',
+    alignSelf: 'center',
   },
-  buttonText: {
-    fontSize: 12,
+  iconContainer: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 100
   },
 });
 
