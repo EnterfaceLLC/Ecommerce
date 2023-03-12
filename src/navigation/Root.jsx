@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 //* SCREEN IMPORTS
 import Home from "../screens/Home";
+import ProductDetails from "../screens/ProductDetails";
 
 //* ROOT CODE  //
 const Stack = createNativeStackNavigator();
@@ -18,6 +19,10 @@ const Root = () => {
           <Stack.Screen
             name='Home'
             component={Home}
+          />
+          <Stack.Screen
+            name='ProductDetails'
+            component={ProductDetails}
           />
         </Stack.Group>
       </Stack.Navigator>
