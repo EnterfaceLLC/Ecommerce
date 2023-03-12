@@ -8,4 +8,6 @@ export const colors = {
   complete: '',
   alerts: '',
   errors: '',
+  white: '#ffff',
+  black: '#000',
 };
