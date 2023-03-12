@@ -75,6 +75,12 @@ export const styles = StyleSheet.create({
     borderRadius: 13,
     // borderWidth: 1,
     // borderColor: '#f2f2f2'
+  },
+  button: {
+    backgroundColor: colors.primary,
+    borderRadius: 100,
+    marginVertical: 20,
+    padding: 5,
 
   }
 });

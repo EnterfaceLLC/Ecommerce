@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react'
 import { AndroidView, styles } from './styles';
 import HomeHeader from '../../components/HomeHeader';
 import Carousel from 'react-native-snap-carousel-v4';
-import { Avatar } from 'react-native-paper/lib/commonjs';
+import { Avatar, Button } from 'react-native-paper';
 
 
 const sliderWidth = Dimensions.get('window').width;
@@ -44,6 +44,12 @@ const ProductDetails = ({ route: { params } }) => {
     if (stock <= quantity) return;
     setQuantity((value) => value + 1);
   };
+
+  const addToCartHandler = () => {
+    if (stock === 0) return;
+    console.log('Adding to Cart', quantity);
+  };
+
 
   return (
     <View style={[AndroidView, styles.page]}>
@@ -104,6 +110,16 @@ const ProductDetails = ({ route: { params } }) => {
             </TouchableOpacity>
           </View>
         </View>
+
+        <TouchableOpacity onPress={addToCartHandler}>
+          <Button
+            style={styles.button}
+            icon={'cart'}
+            textColor={'white'}
+          >
+            Add to Cart
+          </Button>
+        </TouchableOpacity>
       </View>
     </View>
   );
