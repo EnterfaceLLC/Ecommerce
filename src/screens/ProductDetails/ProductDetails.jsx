@@ -4,6 +4,7 @@ import { AndroidView, styles } from './styles';
 import HomeHeader from '../../components/HomeHeader';
 import Carousel from 'react-native-snap-carousel-v4';
 import { Avatar, Button } from 'react-native-paper';
+import { Toast } from 'react-native-toast-message/lib/src/Toast';
 
 
 const sliderWidth = Dimensions.get('window').width;
@@ -46,8 +47,15 @@ const ProductDetails = ({ route: { params } }) => {
   };
 
   const addToCartHandler = () => {
-    if (stock === 0) return;
-    console.log('Adding to Cart', quantity);
+    if (stock === 0) return Toast.show({
+      type: 'error',
+      text1: 'Out of Stock!',
+      text2: 'Check Back Soon'
+    });
+    Toast.show({
+      type: 'success',
+      text1: 'Added to Cart!'
+    })
   };
 
 

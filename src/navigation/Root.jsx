@@ -6,6 +6,9 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "../screens/Home";
 import ProductDetails from "../screens/ProductDetails";
 
+//* REACT NATIVE TOAST //
+import Toast from "react-native-toast-message";
+
 //* ROOT CODE  //
 const Stack = createNativeStackNavigator();
 
@@ -26,6 +29,8 @@ const Root = () => {
           />
         </Stack.Group>
       </Stack.Navigator>
+
+      <Toast position='top' />
     </NavigationContainer>
   );
 };
