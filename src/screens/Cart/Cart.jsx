@@ -12,9 +12,12 @@ import CartItem from '../../components/CartItem';
 //* STYLES IMPORT //
 import { AndroidView, styles } from './styles';
 
+//* REACT NATIVE NAVIGATION //
+import { useNavigation } from '@react-navigation/native';
+
 
 //* CART CODE //
-const cartItems = [
+export const cartItems = [
   {
     name: 'New Castle Jersey',
     image: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/1200px-Newcastle_United_Logo.svg.png',
@@ -50,6 +53,8 @@ const cartItems = [
 ];
 
 const Cart = () => {
+
+  const navigate = useNavigation();
 
   const minusQtyHandler = (id, qty) => {
     console.log('Decreasing', id, qty);
@@ -91,7 +96,7 @@ const Cart = () => {
         <Text>$16.55</Text>
       </View>
 
-      <TouchableOpacity>
+      <TouchableOpacity onPress={CartItem.length > 0 ? () => navigate.navigate('Confirmation') : null}>
         <Button
           style={styles.button}
           icon={'cart'}

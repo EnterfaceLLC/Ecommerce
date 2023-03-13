@@ -6,6 +6,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Home from "../screens/Home";
 import ProductDetails from "../screens/ProductDetails";
 import Cart from "../screens/Cart";
+import Confirmation from "../screens/Confirmation";
 
 //* REACT NATIVE TOAST //
 import Toast from "react-native-toast-message";
@@ -31,6 +32,10 @@ const Root = () => {
           <Stack.Screen
             name='Cart'
             component={Cart}
+          />
+          <Stack.Screen
+            name='Confirmation'
+            component={Confirmation}
           />
         </Stack.Group>
       </Stack.Navigator>
