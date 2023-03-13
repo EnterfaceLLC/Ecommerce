@@ -7,6 +7,7 @@ import Home from "../screens/Home";
 import ProductDetails from "../screens/ProductDetails";
 import Cart from "../screens/Cart";
 import Confirmation from "../screens/Confirmation";
+import Payment from "../screens/Payment/Payment";
 
 //* REACT NATIVE TOAST //
 import Toast from "react-native-toast-message";
@@ -36,6 +37,10 @@ const Root = () => {
           <Stack.Screen
             name='Confirmation'
             component={Confirmation}
+          />
+          <Stack.Screen
+            name='Payment'
+            component={Payment}
           />
         </Stack.Group>
       </Stack.Navigator>
