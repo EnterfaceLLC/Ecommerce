@@ -31,7 +31,7 @@ const HomeHeader = ({ back, emptyCart = false }) => {
           <Avatar.Icon
             style={styles.icons}
             icon={'arrow-left-thin'}
-            color={route.name === 'productDetails' ? 'black' : 'white'}
+            color={route.name === 'productDetails' ? 'white' : 'black'}
           />
         </TouchableOpacity>
       }
@@ -43,7 +43,7 @@ const HomeHeader = ({ back, emptyCart = false }) => {
         <Avatar.Icon
           style={styles.icons}
           icon={emptyCart ? 'delete-outline' : 'cart-outline'}
-          color={route.name === 'productDetails' ? 'black' : 'white'}
+          color={route.name === 'productDetails' ? 'white' : 'black'}
         />
       </TouchableOpacity>
     </>

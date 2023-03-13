@@ -1,16 +1,26 @@
-import { View, Text, Dimensions, Image, TouchableOpacity } from 'react-native'
+//* REACT IMPORTS //
 import React, { useRef, useState } from 'react'
+import { View, Text, Dimensions, Image, TouchableOpacity } from 'react-native'
+
+//* STYLE IMPORTS //
 import { AndroidView, styles } from './styles';
+
+//* COMPONENT IMPORTS // 
 import HomeHeader from '../../components/HomeHeader';
+
+//* REACT NATIVE CAROUSEL IMPORT //
 import Carousel from 'react-native-snap-carousel-v4';
+
+//* REACT NATIVE PAPER IMPORT //
 import { Avatar, Button } from 'react-native-paper';
+
+//* REACT NATIVE TOAST IMPORT //
 import { Toast } from 'react-native-toast-message/lib/src/Toast';
 
 
+//* PRODUCT DETAILS CODE //
 const sliderWidth = Dimensions.get('window').width;
 const itemWidth = sliderWidth;
-
-
 
 const ProductDetails = ({ route: { params } }) => {
   console.log(params);

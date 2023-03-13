@@ -10,4 +10,5 @@ export const colors = {
   errors: '',
   white: '#ffff',
   black: '#000',
+  trans: 'transparent',
 };

@@ -11,25 +11,31 @@ const Android = Platform.OS === 'android';
 
 export const styles = StyleSheet.create({
   page: {
-    paddingTop: Android ? StatusBar.currentHeight : 0,
     flex: 1,
-    padding: 15,
+    padding: 0,
+    // backgroundColor: colors.accent,
   },
-  arrowIcon: {
-    position: 'absolute',
-    left: 20,
-    top: 40,
-    zIndex: 10
+  headingContainer: {
+    paddingTop: 70,
+    marginLeft: 35,
   },
-  cartIcon: {
-    position: 'absolute',
-    right: 20,
-    top: 40,
-    zIndex: 10
+  headingTxt: {
+    fontSize: 25
   },
-  icons: {
-    backgroundColor: colors.trans,
-  }
+  cartListContainer: {
+    flex: 1,
+    paddingVertical: 20,
+  },
+  qtyListContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 35,
+  },
+  button: {
+    backgroundColor: colors.accent,
+    padding: 5,
+    margin: 30
+  },
 });
 
 export const AndroidView = StyleSheet.create({
