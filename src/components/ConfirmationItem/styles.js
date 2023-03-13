@@ -12,9 +12,14 @@ const Android = Platform.OS === 'android';
 export const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    height: 100,
-    marginVertical: 20
+    justifyContent: 'space-between',
+    alignContent: 'center',
+    margin: 10
   },
+  image: {
+    width: 50,
+    height: 50,
+  }
 });
 
 export const AndroidView = StyleSheet.create({

@@ -49,6 +49,22 @@ export const cartItems = [
     stock: 3,
     price: 79.95,
     qty: 1,
+  },
+  {
+    name: 'New Castle Jersey',
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/1200px-Newcastle_United_Logo.svg.png',
+    product: '123abcde',
+    stock: 5,
+    price: 79.99,
+    qty: 2,
+  },
+  {
+    name: 'Manchester Jersey',
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/7/7a/Manchester_United_FC_crest.svg/1200px-Manchester_United_FC_crest.svg.png',
+    product: '456defgh',
+    stock: 3,
+    price: 79.95,
+    qty: 1,
   }
 ];
 

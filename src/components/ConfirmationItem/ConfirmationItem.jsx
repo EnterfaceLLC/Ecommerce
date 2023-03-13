@@ -1,10 +1,26 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+//* REACT IMPORT //
+import React from 'react';
+import { View, Text, Image } from 'react-native';
 
-const ConfirmationItem = () => {
+//* STYLE IMPORT //
+import { styles } from './styles';
+
+//* CONFIRMATION ITEMS CODE //
+const ConfirmationItem = ({ name, price, qty, image }) => {
   return (
-    <View>
-      <Text>ConfirmationItem</Text>
+    <View style={styles.container}>
+      <Image
+        style={styles.image}
+        source={{ uri: image }}
+        resizeMode={'contain'}
+      />
+      <Text
+        numberOfLines={1}
+      >
+        {name}
+      </Text>
+      <Text>x{qty}</Text>
+      <Text>${price}</Text>
     </View>
   )
 }
