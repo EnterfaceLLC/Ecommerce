@@ -8,6 +8,9 @@ import ProductDetails from "../screens/ProductDetails";
 import Cart from "../screens/Cart";
 import Confirmation from "../screens/Confirmation";
 import Payment from "../screens/Payment/Payment";
+import Login from "../screens/Login/Login";
+import ResetPassword from "../screens/ResetPassword";
+import Verify from "../screens/Verify/Verify";
 
 //* REACT NATIVE TOAST //
 import Toast from "react-native-toast-message";
@@ -41,6 +44,18 @@ const Root = () => {
           <Stack.Screen
             name='Payment'
             component={Payment}
+          />
+          <Stack.Screen
+            name='Login'
+            component={Login}
+          />
+          <Stack.Screen
+            name='ResetPassword'
+            component={ResetPassword}
+          />
+          <Stack.Screen
+            name='Verify'
+            component={Verify}
           />
         </Stack.Group>
       </Stack.Navigator>
