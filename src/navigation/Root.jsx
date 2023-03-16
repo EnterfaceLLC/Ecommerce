@@ -11,6 +11,8 @@ import Payment from "../screens/Payment/Payment";
 import Login from "../screens/Login/Login";
 import ResetPassword from "../screens/ResetPassword";
 import Verify from "../screens/Verify/Verify";
+import Register from "../screens/Register/Register";
+import Profile from "../screens/Profile/Profile";
 
 //* REACT NATIVE TOAST //
 import Toast from "react-native-toast-message";
@@ -56,6 +58,14 @@ const Root = () => {
           <Stack.Screen
             name='Verify'
             component={Verify}
+          />
+          <Stack.Screen
+            name='Register'
+            component={Register}
+          />
+          <Stack.Screen
+            name='Profile'
+            component={Profile}
           />
         </Stack.Group>
       </Stack.Navigator>

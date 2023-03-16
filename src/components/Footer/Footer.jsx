@@ -19,7 +19,7 @@ const Footer = ({ activeRoute = 'Home' }) => {
 
   const loading = false;
 
-  const isAuthenticated = false;
+  const isAuthenticated = true;
 
   const navigationHandler = (key) => {
     switch (key) {
@@ -65,7 +65,13 @@ const Footer = ({ activeRoute = 'Home' }) => {
               style={styles.icon}
               color={'white'}
               size={50}
-              icon={activeRoute === 'Profile' ? 'account' : 'account-outline'}
+              icon={
+                isAuthenticated === false
+                  ? 'login'
+                  : activeRoute === 'Profile'
+                    ? 'account'
+                    : 'account-outline'
+              }
             />
           </TouchableOpacity>
         </View>

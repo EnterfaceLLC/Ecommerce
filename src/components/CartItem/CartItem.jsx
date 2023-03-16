@@ -21,6 +21,7 @@ const CartItem = ({
   id,
   minusQtyHandler,
   plusQtyHandler,
+  navigate
 }) => {
   return (
     <View style={styles.container}>
@@ -30,11 +31,15 @@ const CartItem = ({
           { backgroundColor: index % 2 === 0 ? colors.accent : colors.primary }
         ]}
       >
-        <Image
-          source={{ uri: img }}
-          style={{ width: 200, height: '100%', top: '-15%', left: '10%' }} //! Bug w/ importing styles for Image //
-          resizeMode={'contain'}
-        />
+        <TouchableOpacity
+          onPress={() => navigate.navigate('ProductDetails', { id })}
+        >
+          <Image
+            source={{ uri: img }}
+            style={{ width: 200, height: '100%', top: '-15%', left: '10%' }} //! Bug w/ importing styles for Image //
+            resizeMode={'contain'}
+          />
+        </TouchableOpacity>
       </View>
 
       <View style={styles.productInfo}>
