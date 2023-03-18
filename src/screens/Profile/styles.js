@@ -27,7 +27,7 @@ export const styles = StyleSheet.create({
     borderBottomLeftRadius: 25,
     padding: 5,
   },
-  section: {
+  profileSection: {
     backgroundColor: colors.dark,
     alignItems: 'center',
     padding: 30,
@@ -47,6 +47,29 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '300',
     color: colors.white
+  },
+  buttonSection: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    margin: 10
+  },
+  buttonSection2: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    margin: 10
+  },
+  buttonBox: {
+    width: 80,
+    height: 80,
+    borderRadius: 20,
+    alignItems: 'center'
+  },
+  icons: {
+    backgroundColor: colors.trans,
+  },
+  iconText: {
+    color: colors.white,
+    textAlign: 'center',
   }
 });
 
