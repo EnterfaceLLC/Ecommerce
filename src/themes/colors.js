@@ -11,4 +11,5 @@ export const colors = {
   white: '#ffff',
   black: '#000',
   trans: 'transparent',
+  bg: '#264559'
 };

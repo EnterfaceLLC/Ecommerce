@@ -13,6 +13,7 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 35,
+    backgroundColor: colors.bg
   },
   heading: {
     marginBottom: 20,
@@ -31,6 +32,7 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.dark,
     alignItems: 'center',
     padding: 30,
+    marginBottom: 20,
     borderRadius: 10,
     elevation: 5,
   },

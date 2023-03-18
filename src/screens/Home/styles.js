@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
   page: {
     flex: 1,
     padding: 30,
-    backgroundColor: '#efefef'
+    backgroundColor: colors.bg,
   },
   headContain: {
     flexDirection: 'row',

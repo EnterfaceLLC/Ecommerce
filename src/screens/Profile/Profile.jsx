@@ -25,8 +25,33 @@ const Profile = ({ navigation }) => {
 
   const [avatar, setAvatar] = useState(null);
 
-  const navigationHandler = () => {
+  const logoutHandler = () => {
+    console.log('Logged Out')
+  };
 
+  const navigationHandler = (text) => {
+    switch (text) {
+      case "Admin":
+        navigation.navigate('AdminPanel');
+        break;
+      case "Orders":
+        navigation.navigate('Orders');
+        break;
+      case "Profile":
+        navigation.navigate('UpdateProfile');
+        break;
+      case "Password":
+        navigation.navigate('ResetPassword');
+        break;
+      case "Sign-Out":
+        logoutHandler();
+        break;
+
+      default:
+      case "Orders":
+        navigation.navigate('Orders');
+        break;
+    }
   };
 
 
@@ -74,7 +99,7 @@ const Profile = ({ navigation }) => {
                   />
                   <ButtonBox
                     handler={navigationHandler}
-                    icon={'pencil'}
+                    icon={'account-edit-outline'}
                     text={'Profile'}
                   />
                 </View>
@@ -82,7 +107,7 @@ const Profile = ({ navigation }) => {
                 <View style={styles.buttonSection2}>
                   <ButtonBox
                     handler={navigationHandler}
-                    icon={'pencil'}
+                    icon={'lock-outline'}
                     text={'Password'}
                   />
                   <ButtonBox
@@ -110,7 +135,7 @@ const ButtonBox = ({ icon, text, handler, reverse = false, loading = false }) =>
         styles.buttonBox,
         { backgroundColor: reverse ? colors.accent : colors.dark }
       ]}
-      onPres={() => handler(text)}
+      onPress={() => handler(text)}
       disabled={loading}
     >
       <Avatar.Icon

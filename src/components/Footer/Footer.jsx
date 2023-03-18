@@ -43,54 +43,56 @@ const Footer = ({ activeRoute = 'Home' }) => {
 
   return (
     loading === false && (
-      <View style={styles.container}>
-        <View style={styles.footer}>
-          <TouchableOpacity
-            onPress={() => navigationHandler(1)}
-            activeOpacity={0.7}
-          >
-            <Avatar.Icon
-              style={styles.icon}
-              color={'white'}
-              size={50}
-              icon={activeRoute === 'Cart' ? 'shopping' : 'shopping-outline'}
-            />
-          </TouchableOpacity>
-
-          <TouchableOpacity
-            onPress={() => navigationHandler(2)}
-            activeOpacity={0.7}
-          >
-            <Avatar.Icon
-              style={styles.icon}
-              color={'white'}
-              size={50}
-              icon={
-                isAuthenticated === false
-                  ? 'login'
-                  : activeRoute === 'Profile'
-                    ? 'account'
-                    : 'account-outline'
-              }
-            />
-          </TouchableOpacity>
-        </View>
-
-        <View style={styles.homeButtonContainer}>
-          <View style={styles.iconContainer}>
+      <View style={styles.page}>
+        <View style={styles.container}>
+          <View style={styles.footer}>
             <TouchableOpacity
-              onPress={() => navigationHandler(0)}
+              onPress={() => navigationHandler(1)}
               activeOpacity={0.7}
             >
               <Avatar.Icon
                 style={styles.icon}
                 color={'white'}
                 size={50}
-                icon={activeRoute === 'Home' ? 'home' : 'home-outline'}
+                icon={activeRoute === 'Cart' ? 'shopping' : 'shopping-outline'}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              onPress={() => navigationHandler(2)}
+              activeOpacity={0.7}
+            >
+              <Avatar.Icon
+                style={styles.icon}
+                color={'white'}
+                size={50}
+                icon={
+                  isAuthenticated === false
+                    ? 'login'
+                    : activeRoute === 'Profile'
+                      ? 'account'
+                      : 'account-outline'
+                }
               />
             </TouchableOpacity>
           </View>
 
+          <View style={styles.homeButtonContainer}>
+            <View style={styles.iconContainer}>
+              <TouchableOpacity
+                onPress={() => navigationHandler(0)}
+                activeOpacity={0.7}
+              >
+                <Avatar.Icon
+                  style={styles.icon}
+                  color={'white'}
+                  size={50}
+                  icon={activeRoute === 'Home' ? 'home' : 'home-outline'}
+                />
+              </TouchableOpacity>
+            </View>
+
+          </View>
         </View>
       </View>
     )

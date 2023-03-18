@@ -10,6 +10,9 @@ const { height, width } = Dimensions.get('window');
 const Android = Platform.OS === 'android';
 
 export const styles = StyleSheet.create({
+  page: {
+    backgroundColor: colors.bg
+  },
   container: {
     backgroundColor: colors.accent,
     borderTopStartRadius: 120,
@@ -28,7 +31,7 @@ export const styles = StyleSheet.create({
     position: 'absolute',
     top: -30,
     borderRadius: 100,
-    backgroundColor: '#efefef',
+    backgroundColor: colors.bg,
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',
