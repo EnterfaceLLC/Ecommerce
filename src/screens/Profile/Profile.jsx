@@ -8,7 +8,10 @@ import { colors } from '../../themes/colors';
 
 //* REACT NATIVE PAPER //
 import { Avatar, Button } from 'react-native-paper/lib/commonjs';
+
+//* COMPONENT IMPORTS //
 import Footer from '../../components/Footer';
+import Loader from '../../components/Loader';
 
 //* PROFILE CODE //
 const user = {
@@ -34,58 +37,65 @@ const Profile = ({ navigation }) => {
           <Text style={styles.headingTxt}>Profile</Text>
         </View>
 
-        <View style={styles.profileSection}>
-          <Avatar.Image
-            size={100}
-            style={styles.avatar}
-            source={{ uri: avatar }}
-          />
+        {
+          loading ? <Loader /> : (
+            <>
+              <View style={styles.profileSection}>
+                <Avatar.Image
+                  size={100}
+                  style={styles.avatar}
+                  source={{ uri: avatar }}
+                />
 
-          <TouchableOpacity
-            onPress={() => navigation.navigate('Camera', { updateProfile: true })}
-          >
-            <Button textColor={'white'}>
-              Change Photo
-            </Button>
-          </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => navigation.navigate('Camera', { updateProfile: true })}
+                >
+                  <Button textColor={'white'}>
+                    Change Photo
+                  </Button>
+                </TouchableOpacity>
 
-          <Text style={styles.name}>{user?.name}</Text>
-          <Text style={styles.email}>{user?.email}</Text>
-        </View>
+                <Text style={styles.name}>{user?.name}</Text>
+                <Text style={styles.email}>{user?.email}</Text>
+              </View>
 
-        <View>
-          <View style={styles.buttonSection}>
-            <ButtonBox
-              handler={navigationHandler}
-              icon={'shopping-outline'}
-              text={'Orders'}
-            />
-            <ButtonBox
-              handler={navigationHandler}
-              reverse={true}
-              icon={'view-dashboard'}
-              text={'Admin'}
-            />
-            <ButtonBox
-              handler={navigationHandler}
-              icon={'pencil'}
-              text={'Profile'}
-            />
-          </View>
+              <View>
+                <View style={styles.buttonSection}>
+                  <ButtonBox
+                    handler={navigationHandler}
+                    icon={'shopping-outline'}
+                    text={'Orders'}
+                  />
+                  <ButtonBox
+                    handler={navigationHandler}
+                    reverse={true}
+                    icon={'view-dashboard'}
+                    text={'Admin'}
+                  />
+                  <ButtonBox
+                    handler={navigationHandler}
+                    icon={'pencil'}
+                    text={'Profile'}
+                  />
+                </View>
 
-          <View style={styles.buttonSection2}>
-            <ButtonBox
-              handler={navigationHandler}
-              icon={'pencil'}
-              text={'Password'}
-            />
-            <ButtonBox
-              handler={navigationHandler}
-              icon={'exit-to-app'}
-              text={'Sign-Out'}
-            />
-          </View>
-        </View>
+                <View style={styles.buttonSection2}>
+                  <ButtonBox
+                    handler={navigationHandler}
+                    icon={'pencil'}
+                    text={'Password'}
+                  />
+                  <ButtonBox
+                    handler={navigationHandler}
+                    icon={'exit-to-app'}
+                    text={'Sign-Out'}
+                  />
+                </View>
+              </View>
+            </>
+          )
+        }
+
       </View>
 
       <Footer />
