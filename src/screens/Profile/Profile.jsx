@@ -41,7 +41,7 @@ const Profile = ({ navigation }) => {
         navigation.navigate('UpdateProfile');
         break;
       case "Password":
-        navigation.navigate('ResetPassword');
+        navigation.navigate('UpdatePassword');
         break;
       case "Sign-Out":
         logoutHandler();

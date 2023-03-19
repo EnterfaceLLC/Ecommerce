@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     height: 100,
-    marginVertical: 20
+    marginVertical: 20,
   },
   itemContainer: {
     width: '40%',
@@ -29,11 +29,13 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 25,
   },
   productName: {
-    fontSize: 15
+    fontSize: 15,
+    color: colors.white
   },
   productPrice: {
     fontSize: 15,
-    fontWeight: '700'
+    fontWeight: '700',
+    color: 'gold'
   },
   qtyContainer: {
     width: '20%',

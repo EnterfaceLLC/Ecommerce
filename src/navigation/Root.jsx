@@ -13,6 +13,8 @@ import ResetPassword from "../screens/ResetPassword";
 import Verify from "../screens/Verify/Verify";
 import Register from "../screens/Register/Register";
 import Profile from "../screens/Profile/Profile";
+import UpdateProfile from "../screens/UpdateProfile";
+import UpdatePassword from "../screens/UpdatePassword";
 
 //* REACT NATIVE TOAST //
 import Toast from "react-native-toast-message";
@@ -66,6 +68,14 @@ const Root = () => {
           <Stack.Screen
             name='Profile'
             component={Profile}
+          />
+          <Stack.Screen
+            name='UpdateProfile'
+            component={UpdateProfile}
+          />
+          <Stack.Screen
+            name='UpdatePassword'
+            component={UpdatePassword}
           />
         </Stack.Group>
       </Stack.Navigator>

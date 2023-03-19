@@ -10,6 +10,7 @@ import { Avatar } from 'react-native-paper';
 
 //* STYLES, THEME IMPORT //
 import { styles } from './styles';
+import { colors } from '../../themes/colors';
 
 
 //* HOME HEADER CODE //
@@ -31,7 +32,7 @@ const HomeHeader = ({ back, emptyCart = false }) => {
           <Avatar.Icon
             style={styles.icons}
             icon={'arrow-left-thin'}
-            color={route.name === 'productDetails' ? 'white' : 'black'}
+            color={route.name === 'productDetails' ? colors.accent : colors.white}
           />
         </TouchableOpacity>
       }
@@ -43,7 +44,7 @@ const HomeHeader = ({ back, emptyCart = false }) => {
         <Avatar.Icon
           style={styles.icons}
           icon={emptyCart ? 'delete-outline' : 'cart-outline'}
-          color={route.name === 'productDetails' ? 'white' : 'black'}
+          color={route.name === 'productDetails' ? colors.accent : colors.white}
         />
       </TouchableOpacity>
     </>

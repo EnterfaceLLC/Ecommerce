@@ -13,12 +13,14 @@ export const styles = StyleSheet.create({
   page: {
     flex: 1,
     padding: 35,
+    backgroundColor: colors.bg,
   },
   headingContainer: {
     paddingTop: 70,
   },
   headingTxt: {
-    fontSize: 25
+    fontSize: 25,
+    color: 'gold',
   },
   orderListContainer: {
     flex: 1,
@@ -32,7 +34,8 @@ export const styles = StyleSheet.create({
 
   },
   subText: {
-    fontWeight: '800'
+    fontWeight: '800',
+    color: colors.white
   },
   button: {
     backgroundColor: colors.accent,

@@ -13,13 +13,14 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 35,
+    backgroundColor: colors.bg,
   },
   heading: {
     marginBottom: 20,
   },
   headingTxt: {
     fontSize: 25,
-    fontWeight: '500',
+    fontWeight: '300',
     color: colors.white,
     textAlign: 'center',
     backgroundColor: colors.dark,
@@ -34,7 +35,6 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.dark,
   },
   section: {
-    // justifyContent: 'center',
     minHeight: 800
   },
   avatar: {

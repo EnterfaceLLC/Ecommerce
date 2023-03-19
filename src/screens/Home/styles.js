@@ -23,6 +23,7 @@ export const styles = StyleSheet.create({
   },
   headerText: {
     fontSize: 25,
+    color: colors.white
   },
   icons: {
     backgroundColor: colors.accent,
@@ -31,7 +32,6 @@ export const styles = StyleSheet.create({
   section2: {
     flexDirection: 'row',
     height: 50,
-    // backgroundColor: 'orange'
   },
   button: {
     borderRadius: 100,

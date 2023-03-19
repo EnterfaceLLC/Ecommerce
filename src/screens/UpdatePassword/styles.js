@@ -13,22 +13,17 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 35,
+    paddingTop: 110,
     backgroundColor: colors.bg,
-  },
-  heading: {
-    marginBottom: 20,
   },
   headingTxt: {
     fontSize: 25,
     fontWeight: '300',
     color: colors.white,
     textAlign: 'center',
-    backgroundColor: colors.accent,
-    borderBottomRightRadius: 25,
-    borderBottomLeftRadius: 25,
-    padding: 5,
   },
   section: {
+    // flex: 1,
     backgroundColor: colors.dark,
     padding: 20,
     justifyContent: 'center',

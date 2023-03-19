@@ -13,14 +13,15 @@ export const styles = StyleSheet.create({
   page: {
     flex: 1,
     padding: 0,
-    // backgroundColor: colors.accent,
+    backgroundColor: colors.bg,
   },
   headingContainer: {
     paddingTop: 70,
     marginLeft: 35,
   },
   headingTxt: {
-    fontSize: 25
+    fontSize: 25,
+    color: 'gold',
   },
   cartListContainer: {
     flex: 1,

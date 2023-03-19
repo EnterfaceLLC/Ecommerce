@@ -13,43 +13,36 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 35,
-    backgroundColor: colors.bg,
-  },
-  headingContainer: {
-    paddingTop: 70,
+    paddingTop: 110,
+    backgroundColor: colors.bg
   },
   headingTxt: {
     fontSize: 25,
-    color: 'gold',
-  },
-  infoContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    marginVertical: 20,
-    padding: 30,
-    borderRadius: 10,
-    backgroundColor: colors.dark,
-  },
-  radioContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-    alignItems: 'center',
-    marginVertical: 5
-  },
-  radioText: {
+    fontWeight: '300',
     color: colors.white,
-    fontSize: 18,
-    fontWeight: '500',
-    textTransform: 'uppercase',
+    textAlign: 'center',
+  },
+  scrollSection: {
+    padding: 20,
+    borderRadius: 10,
+    elevation: 5,
+    backgroundColor: colors.dark,
   },
   button: {
     backgroundColor: colors.accent,
     borderRadius: 100,
     margin: 10,
     padding: 5
-  }
+  },
 });
 
 export const AndroidView = StyleSheet.create({
   paddingTop: Android ? StatusBar.currentHeight : 0,
+});
+
+export const Inputs = StyleSheet.create({
+  height: 50,
+  marginVertical: 10,
+  marginHorizontal: 10,
+  backgroundColor: colors.white,
 });
