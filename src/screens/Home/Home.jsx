@@ -18,7 +18,6 @@ import ProductCard from '../../components/ProductCard';
 import Footer from '../../components/Footer';
 
 //* HOME CODE //
-
 const categories = [
   { type: 'Premier', _id: '123' },
   { type: 'NFL', _id: '456' },
@@ -29,6 +28,15 @@ const categories = [
 ];
 
 const products = [
+  {
+    name: 'Chelsea Products',
+    price: 15.99,
+    stock: 15,
+    _id: '123xyz',
+    images: [
+      { url: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/270px-Chelsea_FC.svg.png' }
+    ],
+  },
   {
     name: 'New Castle Products',
     price: 15.99,
@@ -71,7 +79,7 @@ const Home = () => {
         <SearchModal
           search={search}
           setSearch={setSearch}
-          setActiveSearch={activeSearch}
+          setActiveSearch={setActiveSearch}
           products={products}
         />
       )}
@@ -107,7 +115,7 @@ const Home = () => {
                   key={item._id}
                   style={[
                     styles.button,
-                    { backgroundColor: category === item._id ? colors.primary : 'lightgrey' }
+                    { backgroundColor: category === item._id ? colors.accent : 'lightgrey' }
                   ]}
                   onPress={() => selectCategory(item._id)}
                 >

@@ -20,22 +20,28 @@ export const styles = StyleSheet.create({
   },
   headingTxt: {
     fontSize: 25,
-    color: 'gold',
+    color: colors.white,
   },
   orderListContainer: {
     flex: 1,
-    paddingVertical: 20
+    paddingVertical: 20,
+    borderRadius: 10,
+    backgroundColor: colors.dark,
   },
   subTContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginVertical: 5,
+    marginVertical: 7,
 
   },
   subText: {
-    fontWeight: '800',
     color: colors.white
+  },
+  subPricing: {
+    fontSize: 16,
+    color: 'gold',
+    fontWeight: '500',
   },
   button: {
     backgroundColor: colors.accent,

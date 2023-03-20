@@ -1,10 +1,10 @@
-// *REACT IMPORTS BELOW ///////
+// *REACT IMPORTS BELOW //
 import { StyleSheet, Dimensions, StatusBar, Platform } from "react-native";
 
-// *THEME IMPORTS BELOW ///////
+// *THEME IMPORTS BELOW //
 import { colors } from '../../themes/colors';
 
-// *STYLE CODE BELOW ///////
+// *STYLE CODE BELOW //
 const { height, width } = Dimensions.get('window');
 
 const Android = Platform.OS === 'android';
@@ -13,14 +13,15 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 35,
-    backgroundColor: colors.bg,
+    paddingTop: 110,
+    backgroundColor: colors.bg
   },
   heading: {
     marginBottom: 20,
   },
   headingTxt: {
     fontSize: 25,
-    fontWeight: '300',
+    fontWeight: '500',
     color: colors.white,
     textAlign: 'center',
     backgroundColor: colors.dark,
@@ -28,46 +29,13 @@ export const styles = StyleSheet.create({
     borderBottomLeftRadius: 25,
     padding: 5,
   },
-  scrollSection: {
-    padding: 20,
-    borderRadius: 10,
-    elevation: 5,
-    backgroundColor: colors.dark,
+  orderSection: {
+    flex: 1,
+    padding: 10,
   },
-  section: {
-    minHeight: 650
-  },
-  avatar: {
-    backgroundColor: colors.accent,
-    alignSelf: 'center'
-  },
-  button: {
-    backgroundColor: colors.accent,
-    borderRadius: 100,
-    margin: 10,
-    padding: 5
-  },
-  forgotText: {
+  headlineText: {
     textAlign: 'center',
-    marginVertical: 10,
-    marginHorizontal: 10,
     color: colors.white,
-    fontWeight: '100'
-  },
-  orText: {
-    fontSize: 20,
-    fontWeight: '100',
-    textAlign: 'center',
-    color: colors.white
-  },
-  link: {
-    fontSize: 18,
-    fontWeight: '500',
-    color: colors.black,
-    textAlign: 'center',
-    textTransform: 'uppercase',
-    marginVertical: 10,
-    marginHorizontal: 20
   }
 });
 

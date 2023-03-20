@@ -22,7 +22,7 @@ const Register = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [phone, setPhone] = useState("");
-  const [pinCode, setPinCode] = useState("");
+  // const [pinCode, setPinCode] = useState("");
 
   const submitHandler = () => {
     Alert.alert('Code Sent Successful')
@@ -94,7 +94,7 @@ const Register = ({ navigation }) => {
               keyboardType={'number-pad'}
             />
 
-            <TextInput
+            {/* <TextInput
               style={Inputs}
               mode={'outlined'}
               activeOutlineColor={colors.accent}
@@ -102,7 +102,7 @@ const Register = ({ navigation }) => {
               value={pinCode}
               onChangeText={setPinCode}
               keyboardType={'number-pad'}
-            />
+            /> */}
 
             <Button
               loading={loading}

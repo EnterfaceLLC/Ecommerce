@@ -65,7 +65,7 @@ const Confirmation = () => {
 const Pricing = ({ title, value }) => (
   <View style={styles.subTContainer}>
     <Text style={styles.subText}>{title}</Text>
-    <Text>${value}</Text>
+    <Text style={styles.subPricing}>${value}</Text>
   </View>
 );
 

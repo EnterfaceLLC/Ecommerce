@@ -16,26 +16,16 @@ const SearchModal = ({ search, setSearch, setActiveSearch, products = [] }) => {
 
   const navigation = useNavigation();
 
-  // const backAction = () => {
-  //   try {
-  //     setSearch("");
-  //     setActiveSearch(false);
-  //   } catch (e) {
-  //     // Alert.alert('Oops', e.message)
-  //   }
-  //   return true;
-  // };
-
-  const bAction = () => {
+  const backAction = () => {
     setSearch("");
     setActiveSearch(false);
     return true;
   };
 
   useEffect(() => {
-    BackHandler.addEventListener('hardwareBackPress', bAction);
+    BackHandler.addEventListener('hardwareBackPress', backAction);
     return () => {
-      BackHandler.removeEventListener('hardwareBackPress', bAction)
+      BackHandler.removeEventListener('hardwareBackPress', backAction)
     };
   }, []);
 

@@ -11,10 +11,10 @@ const Loader = () => {
   return (
     <View style={styles.indicator}>
       <ActivityIndicator
-        color={colors.dark}
+        color={colors.accent}
         size={150}
       />
-      <Text style={styles.indicatorText}>Welcome Back</Text>
+      <Text style={styles.indicatorText}>Gathering Info...</Text>
     </View>
   );
 };

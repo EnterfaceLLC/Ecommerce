@@ -15,12 +15,13 @@ const ConfirmationItem = ({ name, price, qty, image }) => {
         resizeMode={'contain'}
       />
       <Text
+        style={styles.productText}
         numberOfLines={1}
       >
         {name}
       </Text>
-      <Text>x{qty}</Text>
-      <Text>${price}</Text>
+      <Text style={styles.productText}>x{qty}</Text>
+      <Text style={styles.productPrice}>${price}</Text>
     </View>
   )
 }

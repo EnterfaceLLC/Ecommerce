@@ -21,7 +21,7 @@ export const styles = StyleSheet.create({
   },
   headingTxt: {
     fontSize: 25,
-    color: 'gold',
+    color: colors.white,
   },
   cartListContainer: {
     flex: 1,
@@ -31,6 +31,14 @@ export const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 35,
+  },
+  qtyText: {
+    color: colors.white
+  },
+  qtyTotal: {
+    fontSize: 16,
+    color: 'gold',
+    fontWeight: '500'
   },
   button: {
     backgroundColor: colors.accent,

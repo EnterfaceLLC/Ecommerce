@@ -20,10 +20,10 @@ export const styles = StyleSheet.create({
   },
   headingTxt: {
     fontSize: 25,
-    color: 'gold',
+    color: colors.white,
   },
   infoContainer: {
-    flex: 1,
+    // flex: 1,
     justifyContent: 'center',
     marginVertical: 20,
     padding: 30,

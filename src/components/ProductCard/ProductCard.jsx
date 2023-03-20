@@ -19,7 +19,7 @@ const ProductCard = ({ stock, name, price, image, addToCart, id, i, navigate }) 
     >
       <View style={[
         styles.card,
-        { backgroundColor: i % 2 === 0 ? colors.primary : colors.accent }
+        { backgroundColor: i % 2 === 0 ? colors.white : colors.dark }
       ]}>
         <Image
           source={{ uri: image }}
@@ -30,7 +30,7 @@ const ProductCard = ({ stock, name, price, image, addToCart, id, i, navigate }) 
             numberOfLines={2}
             style={[
               styles.name,
-              { color: i % 2 === 0 ? 'white' : 'black' }
+              { color: i % 2 === 0 ? colors.black : colors.white }
             ]}>
             {name}
           </Text>
@@ -39,20 +39,17 @@ const ProductCard = ({ stock, name, price, image, addToCart, id, i, navigate }) 
             numberOfLines={2}
             style={[
               styles.price,
-              { color: i % 2 === 0 ? 'white' : 'black' }
+              { color: i % 2 === 0 ? colors.black : colors.white }
             ]}>
             ${price}
           </Text>
         </View>
         <TouchableOpacity
-          style={[
-            styles.button,
-            { backgroundColor: i % 2 === 0 ? colors.accent : colors.primary }
-          ]}
+          style={styles.button}
         >
           <Button
             onPress={() => addToCart(id, stock)}
-            textColor={i % 2 === 0 ? 'white' : 'black'}
+            textColor={colors.white}
           >
             Add To Cart
           </Button>

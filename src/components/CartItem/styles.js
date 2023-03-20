@@ -51,6 +51,7 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.accent,
   },
   qtyText: {
+    color: colors.white,
     width: 25,
     height: 25,
     textAlign: 'center',

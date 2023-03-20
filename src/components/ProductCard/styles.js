@@ -21,10 +21,10 @@ export const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: 180,
+    height: 175,
     position: 'absolute',
-    left: 50,
-    top: 105,
+    left: 35,
+    top: 115,
     resizeMode: 'contain'
   },
   cardInfo: {
@@ -48,6 +48,7 @@ export const styles = StyleSheet.create({
     borderBottomLeftRadius: 20,
     borderBottomRightRadius: 20,
     width: '100%',
+    backgroundColor: colors.accent
   },
 });
 

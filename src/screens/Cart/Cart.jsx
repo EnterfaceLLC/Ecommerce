@@ -109,8 +109,8 @@ const Cart = () => {
       </View>
 
       <View style={styles.qtyListContainer}>
-        <Text>8 Items</Text>
-        <Text>$16.55</Text>
+        <Text style={styles.qtyText}>8 Items</Text>
+        <Text style={styles.qtyTotal}>$16.55</Text>
       </View>
 
       <TouchableOpacity onPress={CartItem.length > 0 ? () => navigate.navigate('Confirmation') : null}>

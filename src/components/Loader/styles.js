@@ -16,11 +16,11 @@ export const styles = StyleSheet.create({
     alignSelf: 'center',
   },
   indicatorText: {
-    color: colors.accent,
+    color: colors.white,
     fontSize: 20,
     fontWeight: '500',
     textAlign: 'center',
-    marginVertical: 10
+    marginVertical: 15
   },
 });
 
