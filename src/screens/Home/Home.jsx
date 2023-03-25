@@ -29,6 +29,15 @@ const categories = [
 
 const products = [
   {
+    name: 'Tottenham Products',
+    price: 15.99,
+    stock: 10,
+    _id: 'qrs456',
+    images: [
+      { url: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/1200px-Tottenham_Hotspur.svg.png' }
+    ],
+  },
+  {
     name: 'Chelsea Products',
     price: 15.99,
     stock: 15,
@@ -47,7 +56,7 @@ const products = [
     ],
   },
   {
-    name: 'Manchester United Products',
+    name: 'Man. Untd. Products',
     price: 15.99,
     stock: 20,
     _id: '456def',
@@ -115,7 +124,7 @@ const Home = () => {
                   key={item._id}
                   style={[
                     styles.button,
-                    { backgroundColor: category === item._id ? colors.accent : 'lightgrey' }
+                    { backgroundColor: category === item._id ? colors.accent : colors.white }
                   ]}
                   onPress={() => selectCategory(item._id)}
                 >

@@ -16,6 +16,7 @@ import Profile from "../screens/Profile/Profile";
 import UpdateProfile from "../screens/UpdateProfile";
 import UpdatePassword from "../screens/UpdatePassword";
 import Orders from "../screens/Orders";
+import AdminPanel from "../screens/Admin Screens/AdminPanel";
 
 //* REACT NATIVE TOAST //
 import Toast from "react-native-toast-message";
@@ -81,6 +82,10 @@ const Root = () => {
           <Stack.Screen
             name='Orders'
             component={Orders}
+          />
+          <Stack.Screen
+            name='AdminPanel'
+            component={AdminPanel}
           />
         </Stack.Group>
       </Stack.Navigator>

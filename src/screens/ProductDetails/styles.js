@@ -13,16 +13,17 @@ export const styles = StyleSheet.create({
   page: {
     flex: 1,
     padding: 0,
-    backgroundColor: colors.accent,
+    backgroundColor: colors.dark,
   },
   imageContainer: {
     height: 380,
     paddingVertical: 40,
-    backgroundColor: colors.accent
+    backgroundColor: colors.dark
   },
   image: {
-    height: 250,
-    resizeMode: 'contain'
+    height: 200,
+    resizeMode: 'contain',
+    marginTop: 15
   },
   productContainer: {
     flex: 1,
@@ -33,16 +34,19 @@ export const styles = StyleSheet.create({
     borderTopRightRadius: 60,
   },
   productName: {
-    fontSize: 25
+    fontSize: 25,
+    color: colors.white
   },
   productPrice: {
     fontSize: 18,
-    fontWeight: '500'
+    fontWeight: '500',
+    color: 'gold'
   },
   productDescription: {
     letterSpacing: 1,
     lineHeight: 20,
-    marginVertical: 15
+    marginVertical: 15,
+    color: colors.white
   },
   qtyContainer: {
     flexDirection: 'row',
@@ -51,8 +55,8 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 5,
   },
   qtyTitle: {
-    color: colors.black,
-    fontWeight: '100'
+    color: colors.white,
+    fontWeight: '100',
   },
   qtyIconContainer: {
     flexDirection: 'row',
@@ -69,15 +73,12 @@ export const styles = StyleSheet.create({
   qty: {
     width: 26,
     height: 26,
-    backgroundColor: colors.light,
     textAlign: 'center',
     textAlignVertical: 'center',
-    borderRadius: 13,
-    // borderWidth: 1,
-    // borderColor: '#f2f2f2'
+    color: colors.white
   },
   button: {
-    backgroundColor: colors.primary,
+    backgroundColor: colors.accent,
     borderRadius: 100,
     marginVertical: 20,
     padding: 5,

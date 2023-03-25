@@ -36,6 +36,15 @@ const ProductDetails = ({ route: { params } }) => {
 
   const images = [
     {
+      id: '123xyz',
+      url: 'https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/1200px-Tottenham_Hotspur.svg.png'
+
+    },
+    {
+      id: '456qrs',
+      url: 'https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/270px-Chelsea_FC.svg.png'
+    },
+    {
       id: '123abc',
       url: 'https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/1200px-Newcastle_United_Logo.svg.png'
 
@@ -149,7 +158,6 @@ const CarouselCardItems = ({ item, index }) => (
       source={{ uri: item.url }}
       style={[styles.image, { width: itemWidth }]}
     />
-
   </View>
 )
 
